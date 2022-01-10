@@ -5,8 +5,10 @@ import './App.css';
 import { getUser, logout } from './services/users';
 import Auth from './views/Auth';
 
+
 function App() {
   const [user, setUser] = useState(getUser());
+  console.log('USER: ', user);
   const logoutUser = async () => {
     await logout();
     setUser(null);

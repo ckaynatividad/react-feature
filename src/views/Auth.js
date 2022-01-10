@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AuthForm from '../components/Auth';
-import { signInUser } from '../services/users';
+import { signInUser, signupUser } from '../services/users';
 import classNames from 'classnames';
 
 export default function Auth({ setUser }) {
@@ -15,7 +15,7 @@ export default function Auth({ setUser }) {
       if (type === 'signin') {
         resp = await signInUser(email, password);
       } else {
-        resp = await signInUser(email, password);
+        resp = await signupUser(email, password);
       }
       setUser(resp);
     } catch {
