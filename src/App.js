@@ -19,7 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             {user && (
-              <><h1>Welcome User</h1><button onClick={logoutUser}>Log out</button></>
+              <><img src="http://25.media.tumblr.com/49d4192bb5f442a5e413d86dc9a51a63/tumblr_mlbuzoeVrw1qg389xo1_500.gif" /><button onClick={logoutUser}>Log out</button></>
             )}
             {!user && <Auth setUser={setUser} />}
           </Route>

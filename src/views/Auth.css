@@ -1,0 +1,10 @@
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.complete {
+  margin-top: 0px;
+  padding: 200px;
+}
